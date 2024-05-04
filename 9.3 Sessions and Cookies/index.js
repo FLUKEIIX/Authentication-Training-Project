@@ -19,6 +19,8 @@ const db = new pg.Client({
 });
 db.connect();
 
+const testChange = "test change ";
+
 app.get("/", (req, res) => {
   res.render("home.ejs");
 });
